@@ -21,11 +21,11 @@
         android:id="@+id/nav_edit_form"
         android:name="com.example.hexscouter.ui.editForm.EditFormFragment"
         android:label="@string/menu_edit_form"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_edit_form" />
 
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.hexscouter.ui.tools.ToolsFragment"
+        android:name="com.example.hexscouter.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_tools" />
+        tools:layout="@layout/fragment_settings" />
 </navigation>
