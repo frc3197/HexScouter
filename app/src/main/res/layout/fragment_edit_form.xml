@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#323232"
-    tools:context=".ui.newForm.NewFormFragment">
+    tools:context=".ui.editForm.EditFormFragment">
 
     <TextView
-        android:id="@+id/text_new_form"
+        android:id="@+id/text_edit_form"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
