@@ -1,16 +1,15 @@
-package com.example.hexscouter.ui.slideshow;
+package com.example.hexscouter.ui.editForm;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
-
+public class EditFormViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public EditFormViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is edit form fragment");
     }
 
     public LiveData<String> getText() {

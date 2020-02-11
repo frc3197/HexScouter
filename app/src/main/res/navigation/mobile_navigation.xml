@@ -3,47 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_new_form">
-
-<!--    <fragment-->
-<!--        android:id="@+id/nav_home"-->
-<!--        android:name="com.example.hexscouter.ui.home.HomeFragment"-->
-<!--        android:label="@string/menu_home"-->
-<!--        tools:layout="@layout/fragment_home" />-->
+    app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/nav_new_form"
+        android:id="@+id/nav_home"
         android:name="com.example.hexscouter.ui.home.HomeFragment"
-        android:label="@string/menu_new_form"
+        android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_edit_form"
-        android:name="com.example.hexscouter.ui.gallery.GalleryFragment"
-        android:label="@string/menu_edit_form"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_new_form"
+        android:name="com.example.hexscouter.ui.newForm.NewFormFragment"
+        android:label="@string/menu_new_form"
+        tools:layout="@layout/fragment_new_form" />
 
     <fragment
-        android:id="@+id/nav_view"
-        android:name="com.example.hexscouter.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_view"
-        tools:layout="@layout/fragment_slideshow" />
+        android:id="@+id/nav_edit_form"
+        android:name="com.example.hexscouter.ui.editForm.EditFormFragment"
+        android:label="@string/menu_edit_form"
+        tools:layout="@layout/fragment_edit_form" />
 
     <fragment
         android:id="@+id/nav_settings"
-        android:name="com.example.hexscouter.ui.tools.ToolsFragment"
+        android:name="com.example.hexscouter.ui.settings.SettingsFragment"
         android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_tools" />
-
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.hexscouter.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.hexscouter.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        tools:layout="@layout/fragment_settings" />
 </navigation>
