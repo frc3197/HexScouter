@@ -26,7 +26,8 @@ public class NewFormFragment extends Fragment {
         newFormViewModel =
                 ViewModelProviders.of(this).get(NewFormViewModel.class);
         View root = inflater.inflate(R.layout.fragment_new_form, container, false);
-        final TextView textView = root.findViewById(R.id.text_new_form);
+
+        final TextView textView = root.findViewById(R.id.title_new_form);
         newFormViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {

@@ -23,11 +23,32 @@ public class HomeFragment extends Fragment {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel.class);
         View root = inflater.inflate(R.layout.fragment_home, container, false);
-        final TextView textView = root.findViewById(R.id.text_home);
-        homeViewModel.getText().observe(this, new Observer<String>() {
+        final TextView textViewTitle = root.findViewById(R.id.title_text_home);
+        final TextView textViewChangelogTitle = root.findViewById(R.id.changelog_title_home);
+        final TextView textViewChangelog = root.findViewById(R.id.changelog_text_home);
+        final TextView textViewRegionalIndicator = root.findViewById(R.id.regional_indicator_home);
+        homeViewModel.getTitleText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-                textView.setText(s);
+                textViewTitle.setText(s);
+            }
+        });
+        homeViewModel.getChangelogTitleText().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                textViewChangelogTitle.setText(s);
+            }
+        });
+        homeViewModel.getChangelogText().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                textViewChangelog.setText(s);
+            }
+        });
+        homeViewModel.getRegionalIndicator().observe(this, new Observer<String>() {
+            @Override
+            public void onChanged(@Nullable String s) {
+                textViewRegionalIndicator.setText(s);
             }
         });
         return root;

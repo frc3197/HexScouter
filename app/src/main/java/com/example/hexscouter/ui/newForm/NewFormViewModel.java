@@ -9,7 +9,7 @@ public class NewFormViewModel extends ViewModel {
 
     public NewFormViewModel(){
         mText = new MutableLiveData<String>();
-        mText.setValue("This mean I actually did something right.");
+        mText.setValue("New Form");
     }
 
     public LiveData<String> getText() {

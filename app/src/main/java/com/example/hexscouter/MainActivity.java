@@ -24,8 +24,9 @@ import android.content.Intent;
 import android.net.Uri;
 
 public class MainActivity extends AppCompatActivity{
-
     private AppBarConfiguration mAppBarConfiguration;
+    //C = Midwest, M = Wisconsin, 7 = Seven Rivers, W = Worlds
+    public static String competition = "C";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
